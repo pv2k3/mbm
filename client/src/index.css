@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Caveat:wght@400..700&family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    
+    --brand-purple: 280 100% 65%;
+    --brand-pink: 325 100% 60%;
+    --brand-yellow: 45 100% 58%;
+    --brand-green: 142 100% 45%;
+    --brand-magenta: 310 100% 60%;
+    --brand-cyan: 190 100% 50%;
+    --brand-blue: 220 100% 65%;
+    --brand-orange: 25 100% 65%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 280 100% 65%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 325 100% 60%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 45 100% 58%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 280 100% 65%;
+ 
+    --radius: 0.75rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* *{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+/* Custom styles */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Brand colors - Ultra Vibrant */
+.text-brand-purple {
+  color: #B347FF;
+}
+
+.text-brand-pink {
+  color: #FF2D9E;
+}
+
+.text-brand-yellow {
+  color: #FFD700;
+}
+
+.text-brand-green {
+  color: #00FA9A;
+}
+
+.text-brand-magenta {
+  color: #FF26E2;
+}
+
+.text-brand-cyan {
+  color: #00E5FF;
+}
+
+.text-brand-blue {
+  color: #4D79FF;
+}
+
+.text-brand-orange {
+  color: #FF8A47;
+}
+
+.bg-brand-purple {
+  background-color: #B347FF;
+}
+
+.bg-brand-pink {
+  background-color: #FF2D9E;
+}
+
+.bg-brand-yellow {
+  background-color: #FFD700;
+}
+
+.bg-brand-green {
+  background-color: #00FA9A;
+}
+
+.bg-brand-magenta {
+  background-color: #FF26E2;
+}
+
+.bg-brand-cyan {
+  background-color: #00E5FF;
+}
+
+.bg-brand-blue {
+  background-color: #4D79FF;
+}
+
+.bg-brand-orange {
+  background-color: #FF8A47;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-purple-pink {
+  background: linear-gradient(135deg, #B347FF 0%, #FF2D9E 100%);
+}
+
+.bg-gradient-pink-yellow {
+  background: linear-gradient(135deg, #FF2D9E 0%, #FFD700 100%);
+}
+
+.bg-gradient-yellow-green {
+  background: linear-gradient(135deg, #FFD700 0%, #00FA9A 100%);
+}
+
+.bg-gradient-purple-blue {
+  background: linear-gradient(135deg, #B347FF 0%, #4D79FF 100%);
+}
+
+.bg-gradient-pink-orange {
+  background: linear-gradient(135deg, #FF2D9E 0%, #FF8A47 100%);
+}
+
+.bg-gradient-cyan-green {
+  background: linear-gradient(135deg, #00E5FF 0%, #00FA9A 100%);
+}
+
+.border-brand-purple {
+  border-color: #B347FF;
+}
+
+.border-brand-pink {
+  border-color: #FF2D9E;
+}
+
+.border-brand-yellow {
+  border-color: #FFD700;
+}
+
+.border-brand-magenta {
+  border-color: #FF26E2;
+}
+
+.border-brand-cyan {
+  border-color: #00E5FF;
+}
+
+/* Animation classes - Enhanced */
+.animate-fade-in {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-slide-up {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-slide-right {
+  transform: translateX(-40px);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-slide-left {
+  transform: translateX(40px);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-scale {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Floating animation */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Color shift animation */
+@keyframes color-shift {
+  0% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(15deg); }
+  100% { filter: hue-rotate(0deg); }
+}
+
+.animate-color-shift {
+  animation: color-shift 8s ease-in-out infinite;
+}
+
+/* Width expand animation */
+@keyframes width-expand {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.animate-width-expand {
+  animation: width-expand 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Height expand animation */
+@keyframes height-expand {
+  0% { height: 0; }
+  100% { height: 100%; }
+}
+
+.animate-height-expand {
+  animation: height-expand 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Enhanced Hover animations */
+.hover-lift {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-card {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-card:hover:before {
+  left: 100%;
+}
+@font-face {
+  font-family: 'Brice';
+  src: url('/client/assets/fonts/Brice/Brice-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brice';
+  src: url('/client/assets/fonts/Brice/Brice-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brice';
+  src: url('/client/assets/fonts/Brice/Brice-Light.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+}
+
+@font-face {
+  font-family: 'Sabean';
+  src: url("/client/assets/fonts/Sabaen-5y2r8.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  font-family: "Sabean";
+}
