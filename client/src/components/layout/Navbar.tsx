@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X } from 'lucide-react';
+import img from "@img/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +44,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-xl font-bold font-montserrat tracking-tight flex items-center animate-color-shift">
-            <img className="h-16" src="../../assets/img/logo.png" alt="logo" />
+            <img className="h-16" src={img} alt="logo" />
           </Link>
           
           {/* Desktop Navigation */}
