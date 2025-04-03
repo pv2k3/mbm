@@ -59,7 +59,7 @@ app.use((req, res, next) => {
   // ALWAYS serve the app on port 5000
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
-  const port = 9999;
+  const port = import.meta.env.VITE_PORT || 9999;
   server.listen({
     port,
     host: "0.0.0.0",

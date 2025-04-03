@@ -25,6 +25,48 @@ const OurTeam = () => {
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500",
       description: "Content creator turning ideas into engaging narratives",
       color: "bg-[#006351]"
+    },
+    {
+      name: "Sarah Johnson",
+      role: "Creative Director",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500",
+      description: "Brand storyteller and creative strategist with 10+ years of experience",
+      color: "bg-[#602680]"
+    },
+    {
+      name: "Michael Chen",
+      role: "Digital Marketing Lead",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500",
+      description: "SEO wizard and paid advertising expert driving real results",
+      color: "bg-[#de1e5a]"
+    },
+    {
+      name: "Emma Wilson",
+      role: "Content Strategist",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500",
+      description: "Content creator turning ideas into engaging narratives",
+      color: "bg-[#006351]"
+    },
+    {
+      name: "Sarah Johnson",
+      role: "Creative Director",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500",
+      description: "Brand storyteller and creative strategist with 10+ years of experience",
+      color: "bg-[#602680]"
+    },
+    {
+      name: "Michael Chen",
+      role: "Digital Marketing Lead",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500",
+      description: "SEO wizard and paid advertising expert driving real results",
+      color: "bg-[#de1e5a]"
+    },
+    {
+      name: "Emma Wilson",
+      role: "Content Strategist",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500",
+      description: "Content creator turning ideas into engaging narratives",
+      color: "bg-[#006351]"
     }
   ];
 
@@ -45,11 +87,11 @@ const OurTeam = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-around gap-8 mb-16">
+        <div className="flex flex-wrap justify-around gap-2 lg:gap-8 mb-16">
           {teamMembers.map((member, index) => (
             <div 
               key={member.name}
-              className={`${member.color} rounded-lg overflow-hidden w-1/4 shadow-md team-card animate-scale`}
+              className={`${member.color} rounded-lg overflow-hidden w-1/2 lg:w-1/4 shadow-md team-card animate-scale`}
               data-animation="true"
               style={{animationDelay: `${index * 0.2}s`}}
             >

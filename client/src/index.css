@@ -336,6 +336,9 @@
 .service-card:hover:before {
   left: 100%;
 }
+
+
+
 @font-face {
   font-family: 'Brice';
   src: url('/client/assets/fonts/Brice/Brice-Regular.otf') format('opentype');
