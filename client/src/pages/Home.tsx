@@ -5,6 +5,7 @@ import Hero from '@/components/home/Hero';
 import Introduction from '@/components/home/Introduction';
 import GrowthArchitects from '@/components/home/GrowthArchitects';
 import About from '@/components/home/About';
+import FunkyLayout from '@/components/home/FunkyLayout';
 
 const Home = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Home = () => {
         <Hero />
         <Introduction />
         <GrowthArchitects />
+        <FunkyLayout/>
         <About />
       </main>
       <Footer />
